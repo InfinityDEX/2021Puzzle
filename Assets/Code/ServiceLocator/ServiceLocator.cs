@@ -10,7 +10,8 @@ public class ServiceLocator : MonoBehaviour
     /// 共有アイテム
     // サウンドマネージャ
     [SerializeField] AudioSource AudioSource;
-
+    [SerializeField] GameSystem GameSystem;
+        
     void Awake()
     {
         if (Locator == null)
@@ -23,5 +24,11 @@ public class ServiceLocator : MonoBehaviour
     public AudioSource GetAudio()
     {
         return AudioSource;
+    }
+
+    // ゲームシステムを渡す
+    public GameSystem GetSystem()
+    {
+        return GameSystem;
     }
 }
