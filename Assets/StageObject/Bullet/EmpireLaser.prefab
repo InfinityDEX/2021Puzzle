@@ -98,8 +98,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_dir: 1
+  m_charge: 0
   m_life: 0.5
   m_lazerSound: {fileID: 8300000, guid: 635f1055eba63dc4f8d809d6dc54883c, type: 3}
+  m_chargeEffect: {fileID: 9154044242483341041, guid: 00bf7d08ba210e348b0d8f2844babe17,
+    type: 3}
 --- !u!61 &-3482921139444469226
 BoxCollider2D:
   m_ObjectHideFlags: 0

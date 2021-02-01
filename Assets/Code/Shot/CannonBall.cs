@@ -6,6 +6,12 @@ public class CannonBall : MonoBehaviour
 {
     // 発射音
     [SerializeField] AudioClip m_shotSound;
+    // チャージ時間
+    [SerializeField] float m_charge;
+    // 弾の大きさ
+    [SerializeField] Vector3 m_scale;
+    // チャージカウンタ
+    private float m_chargeCounter;
     // 弾の所属情報
     BulletAffiliation affiliation;
     // 移動方向
@@ -16,6 +22,15 @@ public class CannonBall : MonoBehaviour
         // 弾の情報を取得する
         affiliation = GetComponent<BulletAffiliation>();
 
+        // 大きさを0にする
+        transform.localScale = Vector3.zero;
+
+        // 位置をずらす
+        transform.position += m_velocity.normalized * 0.5f;
+
+        // カウンタをセットする
+        m_chargeCounter = m_charge;
+
         // 音を鳴らす
         var audio = ServiceLocator.Locator.GetAudio();
         audio.PlayOneShot(m_shotSound, 0.5f);
@@ -23,8 +38,23 @@ public class CannonBall : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // 等速移動
-        transform.position += m_velocity;
+        // もしカウンタが0以下なら
+        if(m_chargeCounter <= 0)
+        {
+            // 通常の大きさにする
+            transform.localScale = m_scale;
+            // 等速移動
+            transform.position += m_velocity;
+            return;
+        }
+        else
+        {
+            // 少しづつ大きくする
+            transform.localScale = m_scale * (1.0f - (m_chargeCounter / m_charge));
+        }
+
+        // カウンタを減らす
+        m_chargeCounter -= Time.fixedDeltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

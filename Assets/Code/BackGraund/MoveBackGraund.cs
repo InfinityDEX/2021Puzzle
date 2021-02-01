@@ -8,8 +8,7 @@ public class MoveBackGraund : MonoBehaviour
     [SerializeField] float m_returnPointY;
     [SerializeField] float m_speed;
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // 指定した座標以下まで下がったら
         if(transform.position.y <= m_returnPointY)
