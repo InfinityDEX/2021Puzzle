@@ -18,8 +18,7 @@ public class CannonBall : MonoBehaviour
 
         // 音を鳴らす
         var audio = ServiceLocator.Locator.GetAudio();
-        audio.volume = 0.5f;
-        audio.PlayOneShot(m_shotSound);
+        audio.PlayOneShot(m_shotSound, 0.5f);
     }
 
     private void FixedUpdate()

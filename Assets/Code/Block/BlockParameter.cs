@@ -28,7 +28,7 @@ public class BlockParameter : MonoBehaviour
     public MovementObject moveObject;
     // フィールド座標
     public Vector2Int Position { get; private set; }
-    
+
     private void Start()
     {
         // 移動処理クラスを登録
@@ -51,7 +51,7 @@ public class BlockParameter : MonoBehaviour
     {
         Move(new Vector2Int(x, y), power);
     }
-    
+
     // 所属を伝える
     public Team GetTeam()
     {
@@ -94,6 +94,23 @@ public class BlockParameter : MonoBehaviour
         // 理由は不明だが移動には失敗している
         return false;
     }
+    // 破壊されたか？
+    public bool isDestroy()
+    {
+        // 演算結果
+        bool result;
+
+        // 破壊出来て、耐久値が０以下だったら破壊
+        if(CanDestroy && m_durable <= 0)
+            result = true;
+        // そうでなければ破壊しない
+        else
+            result = false;
+
+        // 結果を返す
+        return result;
+    }
+
     // ダメージを受ける
     public void Damage()
     {
@@ -102,7 +119,6 @@ public class BlockParameter : MonoBehaviour
 
         // 音を鳴らす
         var audio = ServiceLocator.Locator.GetAudio();
-        audio.volume = 0.5f;
-        audio.PlayOneShot(m_damageSound);
+        audio.PlayOneShot(m_damageSound, 0.5f);
     }    
 }

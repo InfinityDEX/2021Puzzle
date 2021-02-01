@@ -24,8 +24,7 @@ public class LazerBeam : MonoBehaviour
 
         // 音を鳴らす
         var audio = ServiceLocator.Locator.GetAudio();
-        audio.volume = 0.5f;
-        audio.PlayOneShot(m_lazerSound);
+        audio.PlayOneShot(m_lazerSound, 0.5f);
     }
 
     private void FixedUpdate()

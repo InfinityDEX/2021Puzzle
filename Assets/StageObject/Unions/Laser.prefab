@@ -102,7 +102,7 @@ MonoBehaviour:
   CanDestroy: 1
   CanMovement: 1
   m_team: 0
-  m_durable: 0
+  m_durable: 3
   m_damageSound: {fileID: 8300000, guid: 0bd297398b454f24ca9a53c2ccea4825, type: 3}
   moveObject: {fileID: 0}
 --- !u!114 &8772245998998483938
@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098103004f92ec044aa12b2d7208ae0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_explosion: {fileID: 8948290249199884635, guid: eac4273162e3c8b49afccc4168e0506b,
+    type: 3}
 --- !u!50 &-6771965390691185381
 Rigidbody2D:
   serializedVersion: 4

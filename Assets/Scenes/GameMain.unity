@@ -345,7 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_startPointY: 23
   m_returnPointY: -17
-  m_speed: 0.01
+  m_speed: 0.1
 --- !u!212 &584395501
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -386,7 +386,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e85ada5c1b2240b418bac3438f15528d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -742,7 +742,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e85ada5c1b2240b418bac3438f15528d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.254717, g: 0.254717, b: 0.254717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_startPointY: 23
   m_returnPointY: -17
-  m_speed: 0.01
+  m_speed: 0.1
 --- !u!1 &1740479716
 GameObject:
   m_ObjectHideFlags: 0
