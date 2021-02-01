@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8268693117108000171}
   - component: {fileID: -5594120221577317227}
   m_Layer: 10
-  m_Name: Laser
+  m_Name: EmpireLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fa79b9f051ed9aa46bf29915b2ff7716, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9528302, g: 0.645437, b: 0.22022964, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_team: 1
   m_durable: 3
   m_damageSound: {fileID: 8300000, guid: 0bd297398b454f24ca9a53c2ccea4825, type: 3}
-  moveObject: {fileID: 0}
+  moveObject: {fileID: 8772245998998483938}
 --- !u!114 &8772245998998483938
 MonoBehaviour:
   m_ObjectHideFlags: 0

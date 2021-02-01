@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1971399761919296428}
   - component: {fileID: 3891626729239853769}
   m_Layer: 10
-  m_Name: Shot
+  m_Name: EmpierShot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_team: 1
   m_durable: 5
   m_damageSound: {fileID: 8300000, guid: 0bd297398b454f24ca9a53c2ccea4825, type: 3}
-  moveObject: {fileID: 0}
+  moveObject: {fileID: 1046147916916623603}
 --- !u!114 &1046147916916623603
 MonoBehaviour:
   m_ObjectHideFlags: 0
