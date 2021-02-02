@@ -39,7 +39,8 @@ public class EmpireManager : MonoBehaviour
         {
             foreach (var block in hor)
             {
-                block.moveObject.Move(Vector2Int.down);
+                if(block)
+                    block.moveObject.Move(Vector2Int.down);
             }
         }
     }
