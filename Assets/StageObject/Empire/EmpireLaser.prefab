@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6abc7f1e2cdcf6c46aed770613b97cff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_bullet: {fileID: 2832238660705848095, guid: d85329569e1dc664ca5ffede7243ee8e,
+  m_bullet: {fileID: 2832238660705848095, guid: c45792418b5e9754886507941c282e37,
     type: 3}
   m_interval: 6
 --- !u!61 &-7924005447634871162

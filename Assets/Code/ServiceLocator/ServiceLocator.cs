@@ -11,7 +11,8 @@ public class ServiceLocator : MonoBehaviour
     // サウンドマネージャ
     [SerializeField] AudioSource AudioSource;
     [SerializeField] GameSystem GameSystem;
-        
+    [SerializeField] BlockGenerator BlockGenerator;    
+
     void Awake()
     {
         if (Locator == null)
@@ -30,5 +31,11 @@ public class ServiceLocator : MonoBehaviour
     public GameSystem GetSystem()
     {
         return GameSystem;
+    }
+
+    // ブロックジェネレーターを渡す
+    public BlockGenerator GetBlockGenerator()
+    {
+        return BlockGenerator;
     }
 }

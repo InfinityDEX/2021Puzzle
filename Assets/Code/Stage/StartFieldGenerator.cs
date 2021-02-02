@@ -93,6 +93,10 @@ public class StartFieldGenerator : MonoBehaviour
                         block.SetPosition(j, i);
                         blockLine.Add(block);
                         break;
+                    case 9:
+                        // 生成する座標を設定する
+                        ServiceLocator.Locator.GetBlockGenerator().RegisterPoint(new Vector2Int(j, i));
+                        break;
                     default:
                         blockLine.Add(null);
                         break;

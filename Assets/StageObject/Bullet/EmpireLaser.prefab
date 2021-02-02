@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6730040053157332280}
-  - component: {fileID: 3607389863840725081}
+  - component: {fileID: 94068357069712660}
   - component: {fileID: -8833475932313787539}
-  - component: {fileID: -3482921139444469226}
-  - component: {fileID: -3530079378341229287}
-  - component: {fileID: 6621171976880864003}
+  - component: {fileID: -5206647146231676629}
+  - component: {fileID: -2043565622353376678}
+  - component: {fileID: -828992164015708854}
   m_Layer: 0
   m_Name: EmpireLaser
   m_TagString: Untagged
@@ -35,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3607389863840725081
+--- !u!212 &94068357069712660
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_lazerSound: {fileID: 8300000, guid: 635f1055eba63dc4f8d809d6dc54883c, type: 3}
   m_chargeEffect: {fileID: 9154044242483341041, guid: 00bf7d08ba210e348b0d8f2844babe17,
     type: 3}
---- !u!61 &-3482921139444469226
+--- !u!61 &-5206647146231676629
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,16 +120,16 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.18}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.059828736, y: 0.18}
+  m_Size: {x: 0.57376826, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3530079378341229287
+--- !u!114 &-2043565622353376678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_team: 1
---- !u!50 &6621171976880864003
+--- !u!50 &-828992164015708854
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
